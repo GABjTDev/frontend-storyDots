@@ -7,8 +7,10 @@ El proyecto fue creado con create-react-app
 <a name="general-info"></a>
 ### Info General
 1. **Estas son algunas de las funcionalidades implementadas hasta el momento en la parte del frontend**
+* Mostrado de productos
+* Paginador de productos
 * Páginas protegidas
-* Login de usuario
+* Login y Logout de usuario
 * Panel de administracion para editar, crear y eliminar
 
 2. **Dificultades encontradas mientras realizaba el proyecto**
@@ -23,5 +25,5 @@ El proyecto fue creado con create-react-app
 
 ## Deploy
 <a name="general-info"></a>
-1. **La aplicacion fue deployada en vercel https://frontend-story-dots.vercel.app/**
+1. **La aplicación fue deployada en vercel https://frontend-story-dots.vercel.app/**
 
