@@ -52,7 +52,7 @@ export const addProduct = async (product) => {
 
 export const deleteProduct = async(id) => {
 
-    const response = await fetch(`https://story-dots.herokuapp.com/api/${id}`, {
+    const response = await fetch(`https://story-dots.herokuapp.com/api/product/${id}`, {
             method: "DELETE"
         });
 
