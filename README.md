@@ -20,3 +20,8 @@ El proyecto fue creado con create-react-app
 1. **Para acceder existen dos formas manualmente**
 * usuario: admin, password: admin, tiene acceso al panel de admin
 * usuario: gabriel, password: 1234, no tiene acceso al panel de admin
+
+## Deploy
+<a name="general-info"></a>
+1. **La aplicacion fue deployada en vercel https://frontend-story-dots.vercel.app/**
+
