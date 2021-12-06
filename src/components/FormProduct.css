@@ -1,0 +1,69 @@
+.formProduct h1{
+    margin-bottom: 20px;
+}
+
+.create-active{
+    background-color: rgb(72, 179, 118);
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.invalid-product{
+    background-color: rgb(226, 73, 73);
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.formScreen .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.formScreen .inputBox label{
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+
+.formScreen .inputBox input[type="text"],
+.formScreen .inputBox input[type="number"],
+.formScreen .inputBox textarea{
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+.formScreen .inputBox textarea{
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+
+.formProduct button{
+    background-color: rgb(72, 179, 118);
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    padding: 20px;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.formProduct button:hover{
+    background-color: rgb(32, 131, 75);
+}
+
+.formProduct button.edit{
+    background-color: rgb(228, 131, 93);
+}
+
+.formProduct button.edit:hover{
+    background-color: rgb(216, 110, 68);
+}

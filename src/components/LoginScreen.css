@@ -1,0 +1,51 @@
+.login{
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    max-width: 360px;
+    width: 90%;
+}
+
+.login h1{
+    background-color: rgb(91, 122, 214);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.login form{
+    padding: 40px 20px;
+}
+
+
+.boxInput{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.boxInput label{
+    margin-bottom: 5px;
+}
+
+.boxInput input{
+    padding: 5px;
+    outline: none;
+}
+
+.form button{
+    background-color: rgb(86, 108, 175);
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.form button:hover{
+    background-color: rgb(44, 63, 119);
+}
