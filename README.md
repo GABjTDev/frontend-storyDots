@@ -1,9 +1,15 @@
 # Frontend challenge for StoryDots
 
-1. **This is a question in bold**
-Answer of the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question we use an unordered list:
-* First point
-* Second Point
-* Third point
+## Creacion
+
+## Funcionalidades
+<a name="general-info"></a>
+### Info General
+1. **Estas son algunas de las funcionalidades implementadas hasta el momento en la parte del frontend**
+* Páginas protegidas
+* Login de usuario
+* Panel de administracion para editar, crear y eliminar
+
+2. **Dificultades encontradas mientras realizaba el proyecto**
+* Proteger las páginas si no esta autenticado
+* Manejar el input de type file 
