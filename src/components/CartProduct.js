@@ -1,5 +1,5 @@
+import { useContext } from 'react';
 import { AiFillDelete } from 'react-icons/ai';
-import { useContext } from 'react/cjs/react.development';
 import CartContext from '../context/CartContext';
 import { TYPES } from '../types/types';
 
