@@ -3,14 +3,18 @@ import { useEffect } from "react";
 import { useParams } from "react-router"
 import { getProduct } from "../services/FetchProducts";
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import './ProductScreen.css';
 import Spinner from "./Spinner";
+import { useContext } from "react/cjs/react.development";
+import CartContext from "../context/CartContext";
+import { TYPES } from "../types/types";
+
 
 const ProductScreen = () => {
 
     const {id} = useParams();
     const [product, setProduct] = useState({});
     const [loading, setLoading] = useState(true);
+    const { dispatch } = useContext(CartContext);
 
     useEffect(() => {
 
@@ -25,8 +29,15 @@ const ProductScreen = () => {
 
     }, [id]);
 
+    const handleCart = () => {
+        dispatch({
+            type: TYPES.ADD_PRODUCT,
+            payload: product
+        })
+    }
+
     return (
-        <div className={`product-screen`}>
+        <div className={`product-screen ${loading ? 'flex': ''}`}>
             {
                 loading ?
                     <Spinner />
@@ -48,7 +59,7 @@ const ProductScreen = () => {
                             </div>
                             
                             <div className="container-description">
-                                <h1>{product.name}</h1>
+                                <h2>{product.name}</h2>
                                 <div className="starts">
                                     <AiFillStar />
                                     <AiFillStar />
@@ -56,13 +67,13 @@ const ProductScreen = () => {
                                     <AiFillStar />
                                     <AiOutlineStar />
                                 </div>
-                                <h2>${product.price}</h2>
+                                <h3>${product.price}</h3>
                                 <div className="options">
                                     <div>
                                         <p className="discount">en 12x $ {parseFloat(product.price / 12).toFixed(3)}</p>
                                         <p className="stock">Stock disponible</p>
                                     </div>
-                                    <button>ADD CART</button>
+                                    <button onClick={handleCart}>ADD CART</button>
                                 </div>
                             </div>
 

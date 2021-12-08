@@ -1,0 +1,118 @@
+.cart__container {
+  background-color: white;
+  position: absolute;
+  width: 320px;
+  top: 90px;
+  right: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.cart__container.show {
+  display: flex;
+}
+
+.cart-empty{
+  text-align: center;
+  font-weight: 700;
+}
+
+.cart__container::before{
+  content: '';
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  top: -20px;
+  right: 0;
+  z-index: 100;
+}
+
+.cart__product {
+  display: flex;
+  align-items: center;
+}
+
+.cart-image {
+  width: 50px;
+  height: 50px;
+}
+
+.cart-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+.cart-text{
+  padding: 0 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.cart-text h3{
+  font-size: .65rem;
+  margin-bottom: 5px;
+}
+
+.cart-price-delete{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-price-delete button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+
+  transition: color .3s ease;
+
+  &:hover{
+    color: $error;
+  }
+
+}
+
+.price-total{
+  margin-bottom: 10px;
+}
+
+.btn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.btn-buy{
+  background-color: $success;
+  padding: 7px 0;
+
+  transition: background-color .3s ease;
+
+  &:hover{
+    background-color: darken($color: $success, $amount: 20);
+  }
+
+}
+
+.btn-delete-all{
+  background-color: $error;
+  padding: 7px 0;
+
+  transition: background-color .3s ease;
+
+  &:hover{
+    background-color: darken($color: $error, $amount: 20);
+  }
+
+}

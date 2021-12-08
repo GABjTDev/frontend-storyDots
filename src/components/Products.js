@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { getAllProductsPage } from '../services/FetchProducts';
 import Buttons from './Buttons';
 import Product from './Product';
-import './Products.css';
 import Spinner from './Spinner';
 
 const Products = ({history}) => {

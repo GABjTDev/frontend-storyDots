@@ -3,14 +3,14 @@
 }
 
 .create-active{
-    background-color: rgb(72, 179, 118);
+    background-color: $success;
     padding: 10px;
     margin-bottom: 20px;
     color: white;
 }
 
 .invalid-product{
-    background-color: rgb(226, 73, 73);
+    background-color: $error;
     padding: 10px;
     margin-bottom: 20px;
     color: white;
@@ -43,7 +43,7 @@
 
 
 .formProduct button{
-    background-color: rgb(72, 179, 118);
+    background-color: $success;
     border: none;
     cursor: pointer;
     display: block;
@@ -57,13 +57,13 @@
 }
 
 .formProduct button:hover{
-    background-color: rgb(32, 131, 75);
+    background-color: darken($color: $success, $amount: 10);
 }
 
 .formProduct button.edit{
-    background-color: rgb(228, 131, 93);
+    background-color: $edit;
 }
 
 .formProduct button.edit:hover{
-    background-color: rgb(216, 110, 68);
+    background-color: darken($color: $edit, $amount: 10);
 }

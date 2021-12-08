@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Redirect } from "react-router";
 import UserContext from "../context/UserContext";
 
-import './LoginScreen.css';
+
 
 const LoginScreen = ({history}) => {
 

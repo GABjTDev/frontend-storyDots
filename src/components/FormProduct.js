@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router"
 import { addProduct, editProduct, getProduct } from "../services/FetchProducts";
-import './FormProduct.css';
+
 
 const InitialProduct = {
     name: '',

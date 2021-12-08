@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { getAllProductsPage } from '../services/FetchProducts';
-import './Admin.css';
 import Buttons from './Buttons';
 import Spinner from './Spinner';
 import TrProduct from './TrProduct';

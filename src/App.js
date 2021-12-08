@@ -1,10 +1,17 @@
+import { CartContextProvider } from "./context/CartContext";
 import { UserContextProvider } from "./context/UserContext";
 import AppRouter from "./routers/AppRouter";
+
+
+//Styles
+import './styles/styles.scss';
 
 const App = () => {
     return (
         <UserContextProvider>
-            <AppRouter />
+            <CartContextProvider>
+                <AppRouter />
+            </CartContextProvider>
         </UserContextProvider>
     )
 }

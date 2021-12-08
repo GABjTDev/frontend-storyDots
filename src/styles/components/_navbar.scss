@@ -1,0 +1,82 @@
+.nav{
+    background-color: lighten($color: $primary, $amount: 0);
+    margin-bottom: 40px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.nav ul .ul__div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav ul .ul__div li{
+    margin: 0 20px;
+    font-size: 1.2rem;
+    list-style: none;
+    height: inherit;
+}
+
+.nav ul .ul__div li a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: block;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 8px solid transparent;
+}
+
+.nav .links a.active{
+    border-bottom: 8px solid rgb(37, 37, 37);
+}
+
+.nav .links a:hover{
+    border-bottom: 8px solid rgb(37, 37, 37);
+}
+
+.nav-cart{
+    position: relative;
+}
+
+.nav-cart > button{
+    display: block;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: white;
+
+    transition: color .3s ease;
+
+    &:hover{
+        color: darken($color: white, $amount: 20);
+    }
+}
+
+.nav-cart .cart-counter{
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    bottom: 40px;
+    right: 30px;
+    font-weight: 700;
+    font-size: 12px;
+}

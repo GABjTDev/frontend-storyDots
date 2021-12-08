@@ -20,7 +20,7 @@ const DashboardRoutes = () => {
         <>
             <Navbar />
 
-            <div className="container-main">
+            <main className="container__main">
                 <Switch>
                     <Route exact path="/products" component={Products} />
                     <Route exact path="/product/:id" component={ProductScreen} />
@@ -48,7 +48,7 @@ const DashboardRoutes = () => {
 
                     <Redirect to="/products" />
                 </Switch>
-            </div>
+            </main>
         </>
     )
 }

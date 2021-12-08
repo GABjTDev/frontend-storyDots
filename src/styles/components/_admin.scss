@@ -19,14 +19,15 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
 
-.tr-product .actions button:hover:nth-child(1){
-  color: rgb(224, 145, 54);
-}
+  &:hover:nth-child(1){
+    color: $edit;
+  }
 
-.tr-product .actions button:hover:nth-child(2){
-  color: rgb(230, 62, 62);
+  &:hover:nth-child(2){
+    color: $error;
+  }
+
 }
 
 .add_product{
@@ -35,16 +36,21 @@
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(95, 202, 143);
+    background-color: $success;
     border: none;
     color: white;
     font-weight: 800;
     letter-spacing: 1px;
+
+    transition: background-color .3s ease;
+
+
+    &:hover{
+      background-color: darken($color: $success, $amount: 20);
+    }
+
 }
 
-.add_product:hover{
-    background-color: rgb(57, 163, 105);
-}
 
 table {
     border: 1px solid #ccc;
@@ -113,10 +119,6 @@ table {
     }
     
     table td::before {
-      /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
       content: attr(data-label);
       float: left;
       font-weight: bold;

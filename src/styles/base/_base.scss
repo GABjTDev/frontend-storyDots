@@ -24,28 +24,10 @@ img{
     margin: 0 auto;
 }
 
-.container-main{
+.container__main{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
     padding-bottom: 50px;
-}
-
-.buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.buttons button{
-    background-color: royalblue;
-    cursor: pointer;
-    border: none;
-    padding: 5px 10px;
-    margin: 0 5px;
-    border-radius: 50%;
-    color: white;
-    font-weight: 800;
 }

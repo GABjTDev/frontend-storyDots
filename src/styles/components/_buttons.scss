@@ -1,0 +1,22 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buttons-page{
+    background-color: $primary;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 800;
+
+    &:hover{
+        background-color: darken($color: $primary, $amount: 20);
+    }
+
+}
