@@ -1,10 +1,8 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router"
 import { getProduct } from "../services/FetchProducts";
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import Spinner from "./Spinner";
-import { useContext } from "react/cjs/react.development";
 import CartContext from "../context/CartContext";
 import { TYPES } from "../types/types";
 
